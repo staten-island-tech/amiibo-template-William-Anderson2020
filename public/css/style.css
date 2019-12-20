@@ -145,8 +145,8 @@ header {
 .header-nav .header-nav-link:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4);
-          box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4);
+  /* -webkit-box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4);
+          box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4); */
 }
 
 @media screen and (max-width: 900px) {
