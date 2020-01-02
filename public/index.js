@@ -43,7 +43,6 @@ app.get("/anything", async (req, res) => { //display for /anything extension
 
 app.listen(3000, () => {
   console.log("Port 3000 speaks.");
-  console.log(viewsPath);
 });
 
 //127.0.0.1:3000
