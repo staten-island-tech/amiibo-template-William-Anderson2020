@@ -137,7 +137,7 @@ header {
     height: 30vh;
   }
 }
-.header-nav-link:hover .header-nav-link:not(:hover) {
+.header-nav:hover  .header-nav-link:not(:hover) {
   transform: scale(0.9);
   opacity: 0.3;
 }

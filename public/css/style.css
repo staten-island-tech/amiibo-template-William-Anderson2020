@@ -159,7 +159,7 @@ header {
   }
 }
 
-.header-nav-link:hover .header-nav-link:not(:hover) {
+.header-nav:hover .header-nav-link:not(:hover) {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   opacity: 0.3;

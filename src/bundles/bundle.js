@@ -14,6 +14,7 @@ function search() {
       try {
         const result = await fetch(amiiboUrl);
         const data = await result.json();
+        elements.displayArea.innerHTML = '';
         data.amiibo.forEach(element => {
           elements.displayArea.insertAdjacentHTML(
             "beforeend",
