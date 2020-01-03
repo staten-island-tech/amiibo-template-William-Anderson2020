@@ -41,6 +41,17 @@ app.get("/anything", async (req, res) => { //display for /anything extension
   }
 });
 
+app.get("/showcase/:id", async (req, res) => {
+  const name = req.params.id;
+  try{
+    res.render("showcase", {
+      title: name
+    });
+  } catch {
+    res.status(500).send;
+  }
+})
+
 app.listen(3000, () => {
   console.log("Port 3000 speaks.");
 });
