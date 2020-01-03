@@ -140,6 +140,7 @@ header {
   color: #ffffff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  transition-timing-function: cubic-bezier(.85,.87,.3,.99);
 }
 
 .header-nav .header-nav-link:hover {
@@ -238,13 +239,20 @@ header {
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  transition-timing-function: cubic-bezier(.85,.87,.3,.99);
 }
 
 .display .display-amiibo:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4);
-          box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4);
+  /* -webkit-box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4);
+          box-shadow: 0 0.5rem 1rem rgba(255, 0, 0, 0.4); */
+}
+
+.display:hover .display-amiibo:not(:hover) {
+  -webkit-transform: scale(.9);
+          transform: scale(.9);
+  opacity: .3;
 }
 
 .display .display-name,
